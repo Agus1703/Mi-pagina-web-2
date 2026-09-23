@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golpe de Estado en Chile 1973</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Navegación fija */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(15, 15, 15, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      letter-spacing: 0.5px;
+    }
+
+    nav a:hover {
+      color: #e74c3c;
+    }
+
+    /* Secciones a pantalla completa */
+    section {
+      min-height: 100vh;
+      padding: 6rem 2rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      color: #e74c3c;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #e74c3c;
+      padding-left: 1rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: #ddd;
+      margin-bottom: 1.2rem;
+      max-width: 70ch;
+    }
+
+    .fecha {
+      font-size: 1.1rem;
+      color: #999;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    /* Contenedor de imagen */
+    .img-container {
+      margin: 2rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      max-width: 800px;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .caption {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.6rem;
+      font-style: italic;
+    }
+
+    /* Galería de dos imágenes */
+    .galeria {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      max-width: 900px;
+    }
+
+    .galeria .img-container {
+      margin: 0;
+    }
+
+    /* Lista de puntos */
+    ul {
+      margin: 1.5rem 0 1.5rem 1.5rem;
+      max-width: 65ch;
+    }
+
+    li {
+      margin-bottom: 0.7rem;
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      nav {
+        gap: 1rem;
+        font-size: 0.85rem;
+      }
+      section {
+        padding: 5rem 1.2rem 3rem;
+      }
+      .galeria {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#antecedentes">Antecedentes</a>
+    <a href="#golpe">El Golpe</a>
+    <a href="#consecuencias">Consecuencias</a>
+  </nav>
+
+  <!-- SECCIÓN 1: ANTECEDENTES -->
+  <section id="antecedentes">
+    <h1>Golpe de Estado en Chile</h1>
+    <p class="fecha">11 de septiembre de 1973</p>
+    
+    <h2>1. Antecedentes</h2>
+    
+    <p>
+      En 1970, Salvador Allende se convirtió en el primer presidente marxista elegido democráticamente 
+      en América Latina. Su gobierno impulsó profundas reformas: nacionalización del cobre, reforma agraria 
+      y políticas de redistribución de la riqueza.
+    </p>
+    
+    <p>
+      Estas medidas generaron fuerte polarización. Sectores empresariales, la oposición política y parte 
+      de las Fuerzas Armadas se opusieron al proyecto de la Unidad Popular. La crisis económica, la 
+      inflación y el desabastecimiento agravaron el clima de confrontación.
+    </p>
+
+    <div class="img-container">
+      <img src="images/historia1.jpg" alt="Salvador Allende y el contexto político previo a 1973">
+    </div>
+    <p class="caption">Salvador Allende y el ambiente político de comienzos de los años 70</p>
+
+    <div class="img-container">
+      <img src="images/historia2.jpg" alt="Manifestaciones y polarización social en Chile antes del golpe">
+    </div>
+    <p class="caption">Manifestaciones y polarización social en los años previos al golpe</p>
+
+    <ul>
+      <li>Elección de Allende (1970) con el 36,6 % de los votos</li>
+      <li>Nacionalización del cobre y otras industrias estratégicas</li>
+      <li>Creciente oposición de la derecha y de sectores militares</li>
+      <li>Crisis económica y polarización social extrema</li>
+    </ul>
+  </section>
+
+  <!-- SECCIÓN 2: EL GOLPE -->
+  <section id="golpe">
+    <h2>2. El Golpe del 11 de septiembre</h2>
+    
+    <p>
+      En la mañana del 11 de septiembre de 1973, las Fuerzas Armadas y Carabineros, liderados por el 
+      general Augusto Pinochet, llevaron a cabo un golpe de Estado. Se bombardeó el Palacio de La Moneda, 
+      sede del gobierno, donde se encontraba el presidente Allende.
+    </p>
+    
+    <p>
+      Allende se negó a rendirse y murió durante el asalto al palacio. Ese mismo día se disolvió el 
+      Congreso Nacional y se instauró una Junta Militar de Gobierno.
+    </p>
+
+    <div class="img-container">
+      <img src="images/historia3.jpg" alt="Bombardeo del Palacio de La Moneda el 11 de septiembre de 1973">
+    </div>
+    <p class="caption">Bombardeo del Palacio de La Moneda, 11 de septiembre de 1973</p>
+
+    <ul>
+      <li>Bombardeo aéreo y terrestre de La Moneda</li>
+      <li>Muerte de Salvador Allende</li>
+      <li>Disolución del Congreso y suspensión de la Constitución</li>
+      <li>Inicio de la dictadura militar</li>
+    </ul>
+  </section>
+
+  <!-- SECCIÓN 3: CONSECUENCIAS -->
+  <section id="consecuencias">
+    <h2>3. Consecuencias</h2>
+    
+    <p>
+      El golpe dio inicio a una dictadura que se extendió hasta 1990. El régimen de Pinochet implementó 
+      una fuerte represión política: miles de personas fueron detenidas, torturadas, ejecutadas o 
+      desaparecieron. Al mismo tiempo, se aplicaron profundas reformas económicas neoliberales.
+    </p>
+    
+    <p>
+      La dictadura dejó una profunda huella en la sociedad chilena. El retorno a la democracia en 1990 
+      no borró las cicatrices de las violaciones a los derechos humanos ni el debate sobre el legado 
+      económico y político de esos 17 años.
+    </p>
+
+    <div class="img-container">
+      <img src="images/historia4.jpg" alt="Consecuencias de la dictadura militar en Chile">
+    </div>
+    <p class="caption">Represión y transformación del país durante la dictadura</p>
+
+    <ul>
+      <li>Más de 3.000 muertos y desaparecidos según informes oficiales</li>
+      <li>Decenas de miles de detenidos y exiliados</li>
+      <li>Reformas económicas de libre mercado (los “Chicago Boys”)</li>
+      <li>Transición democrática a partir de 1990</li>
+    </ul>
+  </section>
+
+  <footer>
+    Presentación histórica · Golpe de Estado en Chile · 11 de septiembre de 1973
+  </footer>
+
+</body>
+</html>
